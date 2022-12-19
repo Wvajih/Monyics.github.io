@@ -26,20 +26,45 @@ header{
     border: 3px solid black;
     border-radius: 30%;
     height: 100px;
+    position: relative;
 }
 main {
-        background-color: #222;
-        height: 100vh;
-        width: 98.9vw;
+    background-color: #222;
+    height: auto;
+    width: 98.9vw;
 }
 html,body{
     max-width: 100vw !important;
 }
 .Grille{
-    width: 100vw;
-    display: inline-flex;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    max-width: 1350px;
+    width: 85%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,400px);
+    justify-content: center;
+    grid-gap: 10px;
+    background-color: #222;
+    
 }
-.grid-item{
-    position: absolute;
-    margin: 2px !important;
+.grille-items{
+    width: 400px;
+    height: 280px;
+    background-color: gray;
+}
+@media screen and (width<1200px) {
+    .PhotProfile img {
+        border: 3px solid black;
+        border-radius: 30%;
+        height: 100px;
+        position: relative;
+        margin-top: -200px;
+        margin-left: 30%;
+    }
+    .cover{
+        width:100vw;
+    }
 }
