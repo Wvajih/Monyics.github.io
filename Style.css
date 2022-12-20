@@ -91,7 +91,7 @@ body{
         left: -200px;
     }
     html,body{
-        max-width: 100vw !important;
+        max-width: 100vw;
     }
     .btn-secondary{
         display: inline;
@@ -281,8 +281,11 @@ svg{
     float: right;
     top:20px;
     position: absolute;
-    left: 200px;
     display: none;
-    z-index: -1;
-
+    left: 200px;
+}
+@media(min-width:600px) {
+    .btn-secondary{
+        display: none !important;
+    }
 }
