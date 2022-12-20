@@ -15,6 +15,7 @@ body{
     top: 0;
     width: 100%;
     transition: .2s;
+    left: 0;
 }
 .menu_bar ul{
     display: inline-flex;
@@ -79,17 +80,32 @@ body{
 @media (max-width: 600px) {
     .menu_bar ul{
         display: inline-block;
-        width: auto;
-        
+        width: 200px;
+
     }
     .menu_bar{
-        width: 300px;
+        width: 200px;
         justify-content: center;
         background-color: rgb(22,22,22);
         align-items: center;
+        left: -200px;
     }
     html,body{
         max-width: 100vw !important;
+    }
+    .btn-secondary{
+        display: inline;
+    }
+    .hea2 ul{
+        margin-top: 40px;
+        display: inline-block;
+    }
+    .hea2{
+        justify-content: center;
+        align-items: center;
+        width:100vw;
+        padding-left: 21vw;
+        align-content: center;
     }
 }
 
@@ -259,5 +275,14 @@ svg{
     border: #fff;
     border: 1px solid;
     border-radius: 5px;
+
+}
+.btn-secondary{
+    float: right;
+    top:20px;
+    position: absolute;
+    left: 200px;
+    display: none;
+    z-index: -1;
 
 }
