@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Gabriola';
 }
 header{
     margin-left: 10px;
@@ -37,7 +38,7 @@ html,body{
     max-width: 100vw !important;
 }
 .Grille{
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 60px;
     max-width: 1350px;
     width: 85%;
@@ -67,4 +68,56 @@ html,body{
     .cover{
         width:100vw;
     }
+    .nav-main{
+        display: block;
+        height: auto !important;
+    }
+    .det{
+        float: left;
+        z-index: 0;
+    }
+    .det ul{
+        display: inline-block !important;
+        
+        
+    }
+}
+.nav-main{
+    display: block;
+    margin: 0px;
+    color: aliceblue;
+    font-size: larger;
+    display: inline-block;
+    width: 100vw;
+    height: 70px;
+    padding-top: 20px;
+    padding-left: 5%;
+    margin-bottom: 10px;
+}
+.usrn{
+    width: auto;
+    font-size: x-large;
+    display: inline;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid aliceblue;
+    border-right: 2px solid aliceblue;
+}
+.det{
+    float: right;
+    width:70vw;
+    display: inline-flex;
+    padding-top: 30px;
+    list-style-type: circle;
+}
+.det ul{
+    display: inline-flex;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid aliceblue;
+    border-right: 2px solid aliceblue;
+}
+.det ul li {
+    margin-left: 20px;
+    
 }
